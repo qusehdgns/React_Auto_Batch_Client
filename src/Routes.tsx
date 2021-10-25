@@ -1,12 +1,12 @@
 import React from 'react';
-import {Route, RouteComponentProps, Switch} from "react-router-dom";
+import {Redirect, Route, RouteComponentProps, Switch, withRouter} from "react-router-dom";
 
-const Routes: React.FC<RouteComponentProps> = () => {
+const Routes: React.FC<RouteComponentProps> = props => {
     return (
         <Switch>
-            <Route />
+            <Redirect exact from="/" to="/main" />
         </Switch>
     );
 }
 
-export default Routes;
+export default withRouter(Routes);
