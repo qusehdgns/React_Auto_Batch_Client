@@ -1,9 +1,13 @@
-import React from 'react';
+import React, {FC} from 'react';
 
-function Index(props) {
+type Props = {};
+
+const ReactUploadPage: FC<Props> = () => {
     return (
-        <div></div>
+        <div>
+            <h1>Test</h1>
+        </div>
     );
 }
 
-export default Index;
+export default ReactUploadPage;

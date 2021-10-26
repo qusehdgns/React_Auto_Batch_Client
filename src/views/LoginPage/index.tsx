@@ -1,9 +1,9 @@
 import React from 'react';
 
-function Index(props) {
+const LoginPage = () => {
     return (
         <div></div>
     );
 }
 
-export default Index;
+export default LoginPage;
